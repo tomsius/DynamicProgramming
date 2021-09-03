@@ -11,10 +11,10 @@ namespace Fibonacci
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(FibRec(6));
-            Console.WriteLine(FibRec(7));
-            Console.WriteLine(FibRec(8));
-            //Console.WriteLine(FibRec(50));
+            Console.WriteLine(FibonacciLazy.Fib(6));
+            Console.WriteLine(FibonacciLazy.Fib(7));
+            Console.WriteLine(FibonacciLazy.Fib(8));
+            //Console.WriteLine(FibonacciLazy.Fib(50));
             Console.WriteLine();
 
             Console.WriteLine(FibonacciMemoization.FibRec(6));
@@ -27,16 +27,6 @@ namespace Fibonacci
             Console.WriteLine(FibonacciMemoization.FibIterative(7));
             Console.WriteLine(FibonacciMemoization.FibIterative(8));
             Console.WriteLine(FibonacciMemoization.FibIterative(50));
-        }
-
-        public static int FibRec(int n)
-        {
-            if (n <= 2)
-            {
-                return 1;
-            }
-
-            return FibRec(n - 1) + FibRec(n - 2);
         }
     }
 }
