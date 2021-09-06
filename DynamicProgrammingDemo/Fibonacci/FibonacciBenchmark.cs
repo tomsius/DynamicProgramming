@@ -13,9 +13,15 @@ namespace Fibonacci
         }
 
         [Benchmark]
-        public void MemoRec15()
+        public void MemoRecArray15()
         {
-            FibonacciMemoization.FibRec(15);
+            FibonacciMemoization.FibRecArray(15);
+        }
+
+        [Benchmark]
+        public void MemoRecDictionary15()
+        {
+            FibonacciMemoization.FibRecDictionary(15);
         }
 
         [Benchmark]

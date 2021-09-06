@@ -1,8 +1,10 @@
-﻿namespace Fibonacci
+﻿using System.Collections.Generic;
+
+namespace Fibonacci
 {
     public static class FibonacciMemoization
     {
-        public static long FibRec(int n, long[] memo = null)
+        public static long FibRecArray(int n, long[] memo = null)
         {
             if (memo == null)
             {
@@ -20,9 +22,32 @@
                 return 1;
             }
 
-            memo[n - 1] = FibRec(n - 1, memo) + FibRec(n - 2, memo);
+            memo[n - 1] = FibRecArray(n - 1, memo) + FibRecArray(n - 2, memo);
 
             return memo[n - 1];
+        }
+
+        public static long FibRecDictionary(int n, Dictionary<int, long> memo = null)
+        {
+            if (memo == null)
+            {
+                memo = new Dictionary<int, long>(n);
+            }
+
+            if (memo.ContainsKey(n))
+            {
+                return memo[n];
+            }
+
+            if (n <= 2)
+            {
+                memo[n] = 1;
+                return 1;
+            }
+
+            memo.Add(n, FibRecDictionary(n - 1, memo) + FibRecDictionary(n - 2, memo));
+
+            return memo[n];
         }
 
         public static long FibIterative(int n)
