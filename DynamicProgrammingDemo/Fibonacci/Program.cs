@@ -12,23 +12,6 @@ namespace Fibonacci
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine(FibonacciLazy.Fib(6));
-            //Console.WriteLine(FibonacciLazy.Fib(7));
-            //Console.WriteLine(FibonacciLazy.Fib(8));
-            ////Console.WriteLine(FibonacciLazy.Fib(50));
-            //Console.WriteLine();
-
-            //Console.WriteLine(FibonacciMemoization.FibRec(6));
-            //Console.WriteLine(FibonacciMemoization.FibRec(7));
-            //Console.WriteLine(FibonacciMemoization.FibRec(8));
-            //Console.WriteLine(FibonacciMemoization.FibRec(50));
-            //Console.WriteLine();
-
-            //Console.WriteLine(FibonacciMemoization.FibIterative(6));
-            //Console.WriteLine(FibonacciMemoization.FibIterative(7));
-            //Console.WriteLine(FibonacciMemoization.FibIterative(8));
-            //Console.WriteLine(FibonacciMemoization.FibIterative(50));
-
             var results = BenchmarkRunner.Run<FibonacciBenchmark>();
         }
     }
