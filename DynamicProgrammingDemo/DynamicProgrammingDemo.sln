@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GridTraveler", "GridTravele
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanSum", "CanSum\CanSum.csproj", "{015E61CF-6C74-4309-85C3-BA5F96A07866}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowSum", "HowSum\HowSum.csproj", "{D30D04E8-217A-4037-A57D-0462385BC87C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HowSum", "HowSum\HowSum.csproj", "{D30D04E8-217A-4037-A57D-0462385BC87C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestSum", "BestSum\BestSum.csproj", "{06B0812B-C88C-4E6D-9CE7-24B712EF478B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D30D04E8-217A-4037-A57D-0462385BC87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D30D04E8-217A-4037-A57D-0462385BC87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D30D04E8-217A-4037-A57D-0462385BC87C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B0812B-C88C-4E6D-9CE7-24B712EF478B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B0812B-C88C-4E6D-9CE7-24B712EF478B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B0812B-C88C-4E6D-9CE7-24B712EF478B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B0812B-C88C-4E6D-9CE7-24B712EF478B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
