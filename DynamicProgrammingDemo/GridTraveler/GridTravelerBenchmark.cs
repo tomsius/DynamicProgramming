@@ -6,13 +6,13 @@ namespace GridTraveler
     public class GridTravelerBenchmark
     {
         [Benchmark(Baseline = true)]
-        public void Lazy15()
+        public void Lazy()
         {
             GridTravelerLazy.GridTraveler(15, 15);
         }
 
         [Benchmark]
-        public void Memo15()
+        public void Memo()
         {
             GridTravelerMemoization.GridTraveler(15, 15);
         }

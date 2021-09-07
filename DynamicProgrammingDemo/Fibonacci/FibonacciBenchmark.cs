@@ -7,25 +7,25 @@ namespace Fibonacci
     public class FibonacciBenchmark
     {
         [Benchmark(Baseline = true)]
-        public void LazyRec15()
+        public void LazyRec()
         {
             FibonacciLazy.Fib(15);
         }
 
         [Benchmark]
-        public void MemoRecArray15()
+        public void MemoRecArray()
         {
             FibonacciMemoization.FibRecArray(15);
         }
 
         [Benchmark]
-        public void MemoRecDictionary15()
+        public void MemoRecDictionary()
         {
             FibonacciMemoization.FibRecDictionary(15);
         }
 
         [Benchmark]
-        public void MemoIterative15()
+        public void MemoIterative()
         {
             FibonacciMemoization.FibIterative(15);
         }
