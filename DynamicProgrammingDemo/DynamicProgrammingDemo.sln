@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanConstruct", "CanConstruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountConstruct", "CountConstruct\CountConstruct.csproj", "{5C06F65B-AB2C-492F-852C-2F6C8DC87AF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllConstruct", "AllConstruct\AllConstruct.csproj", "{AA107763-B22B-4F37-983C-6C506C573C6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{5C06F65B-AB2C-492F-852C-2F6C8DC87AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C06F65B-AB2C-492F-852C-2F6C8DC87AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C06F65B-AB2C-492F-852C-2F6C8DC87AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA107763-B22B-4F37-983C-6C506C573C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA107763-B22B-4F37-983C-6C506C573C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA107763-B22B-4F37-983C-6C506C573C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA107763-B22B-4F37-983C-6C506C573C6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
