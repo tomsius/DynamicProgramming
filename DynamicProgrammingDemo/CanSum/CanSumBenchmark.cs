@@ -22,5 +22,11 @@ namespace CanSum
         {
             CanSumMemoization.CanSumDictionary(270, new int[] { 7, 14 });
         }
+
+        [Benchmark]
+        public void Tabulation()
+        {
+            CanSumTabulation.CanSum(270, new int[] { 7, 14 });
+        }
     }
 }
