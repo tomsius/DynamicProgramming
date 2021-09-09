@@ -25,9 +25,15 @@ namespace Fibonacci
         }
 
         [Benchmark]
-        public void MemoIterative()
+        public void MemoTaulationSumPreviousElements()
         {
-            FibonacciMemoization.FibIterative(15);
+            FibonacciTabulation.FibSumPreviousElements(15);
+        }
+
+        [Benchmark]
+        public void MemoTaulationSumForwards()
+        {
+            FibonacciTabulation.FibSumForwards(15);
         }
     }       
 }           
