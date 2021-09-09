@@ -16,5 +16,11 @@ namespace BestSum
         {
             BestSumMemoization.BestSum(35, new int[] { 1, 2, 5, 25 });
         }
+
+        [Benchmark]
+        public void Tabulation()
+        {
+            BestSumTabulation.BestSum(35, new int[] { 1, 2, 5, 25 });
+        }
     }
 }
