@@ -16,5 +16,11 @@ namespace HowSum
         {
             HowSumMemoization.HowSum(270, new int[] { 7, 14 });
         }
+
+        [Benchmark]
+        public void Tabulation()
+        {
+            HowSumTabulation.HowSum(270, new int[] { 7, 14 });
+        }
     }
 }
