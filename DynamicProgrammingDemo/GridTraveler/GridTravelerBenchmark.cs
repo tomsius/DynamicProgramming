@@ -16,5 +16,11 @@ namespace GridTraveler
         {
             GridTravelerMemoization.GridTraveler(15, 15);
         }
+
+        [Benchmark]
+        public void Tabulation()
+        {
+            GridTravelerTabulation.GridTraveler(15, 15);
+        }
     }
 }
