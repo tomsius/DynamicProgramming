@@ -22,5 +22,11 @@ namespace CanConstruct
         {
             CanConstructMemoization.CanConstruct(new string('e', 24) + "f", new string[] { "e", "ee", "eee", "eeee", "eeeee", "eeeeee" });
         }
+
+        [Benchmark]
+        public void Tabulation()
+        {
+            CanConstructTabulation.CanConstruct(new string('e', 24) + "f", new string[] { "e", "ee", "eee", "eeee", "eeeee", "eeeeee" });
+        }
     }
 }
