@@ -22,5 +22,11 @@ namespace CountConstruct
         {
             CountConstructMemoization.CountConstruct(new string('e', 24) + "f", new string[] { "e", "ee", "eee", "eeee", "eeeee", "eeeeee" });
         }
+
+        [Benchmark]
+        public void Tabulation()
+        {
+            CountConstructTabulation.CountConstruct(new string('e', 24) + "f", new string[] { "e", "ee", "eee", "eeee", "eeeee", "eeeeee" });
+        }
     }
 }
