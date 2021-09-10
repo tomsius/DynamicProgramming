@@ -22,5 +22,17 @@ namespace AllConstruct
         {
             AllConstructMemoization.AllConstruct(new string('a', 24) + "z", new string[] { "a", "aa", "aaa", "aaaa", "aaaaa" });
         }
+
+        [Benchmark]
+        public void TabulationLinqCopy()
+        {
+            AllConstructTabulation.AllConstructLinqCopy(new string('a', 24) + "z", new string[] { "a", "aa", "aaa", "aaaa", "aaaaa" });
+        }
+
+        [Benchmark]
+        public void TabulationManualCopy()
+        {
+            AllConstructTabulation.AllConstructManualCopy(new string('a', 24) + "z", new string[] { "a", "aa", "aaa", "aaaa", "aaaaa" });
+        }
     }
 }
